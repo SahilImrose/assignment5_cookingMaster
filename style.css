@@ -1,0 +1,40 @@
+body{
+    background-color: #EDD263;
+}
+#searchFood{
+    background: #3B2D64;
+    color: #fff;
+    border: 0px;
+    outline: none;
+    font-size: 21px;
+}
+#searchFood:focus{
+    border: 0;
+    box-shadow: 0;
+}
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+     box-shadow: 0 0 0 0 rgb(13 110 253); 
+}
+#foodName{
+    outline: none;
+}
+.form-control:focus {
+     box-shadow: 0 0 0 0 rgb(13 110 253);
+}
+#foodDetails li{
+    list-style: none;
+}
+#foodDetails h5{
+    color: #3B2D64;
+}
+.orange{
+    background-color: #fff;
+    color: #3B2D64;
+}
+.text_color{
+    color:#3B2D64 !important;
+}
+#errorHandel{
+    color:#ff5722;
+}
