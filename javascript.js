@@ -72,7 +72,7 @@ const food=(idMeal)=>{
     <div class="card h-100  shadow card_radius p-3 ">
     <img src="${foodObject.strMealThumb}" class="card-img-top card-bg " alt="...">
     <div class="card-body">
-      <h5 class="card-title orangeColor fw-bold ">${foodObject.strMeal}</h5>
+      <h5 class="card-title text_color fw-bold ">${foodObject.strMeal}</h5>
       <h6>Ingredient</h6>
       <li><span><i class="fas fa-check-square orange"></i> </span> ${foodObject.strIngredient1} </li>
       <li><span><i class="fas fa-check-square orange"></i> </span> ${foodObject.strIngredient2} </li>
