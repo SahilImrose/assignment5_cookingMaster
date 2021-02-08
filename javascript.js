@@ -36,7 +36,7 @@ document.getElementById('searchFood').addEventListener('click', function(){
   
           }else{
             foodMeal =`
-             <h3>Meals not find</h3>
+             <h3>Food item not found</h3>
             `;
             errorHandel.innerHTML=foodMeal; 
             parentClass.style.display="none";
@@ -48,7 +48,7 @@ document.getElementById('searchFood').addEventListener('click', function(){
       } )
       .catch(error => {
           let foodMeal =`
-            <h3> Search not found.Please Search With First Letter </h3>
+            <h3> food item not found plz search again </h3>
           `;
           errorHandel.innerHTML = foodMeal;
           parentClass.style.display="none";
