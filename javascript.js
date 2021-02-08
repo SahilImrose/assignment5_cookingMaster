@@ -10,7 +10,7 @@ document.getElementById('searchFood').addEventListener('click', function(){
     const food = document.getElementById('foodName');
     const foodName = food.value;
     if(foodName == ''){
-      alert('Please Enter Your Desired Food Item');
+      alert('Please Enter Your Desired Food Items first letter');
     }else{
       fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${foodName}`)
       .then(res => res.json())
@@ -48,7 +48,7 @@ document.getElementById('searchFood').addEventListener('click', function(){
       } )
       .catch(error => {
           let foodMeal =`
-            <h3> food item not found plz search again </h3>
+            <h3> food item not found plz search again with first letter </h3>
           `;
           errorHandel.innerHTML = foodMeal;
           parentClass.style.display="none";
