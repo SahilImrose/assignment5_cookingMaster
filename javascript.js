@@ -1,18 +1,18 @@
 
-const foodItem = document.getElementById('foodItem');
+const Itemfood = document.getElementById('Itemfood');
 const parentClass = document.getElementById('parentClass');
-const foodDetails = document.getElementById('foodDetails');
-const errorHandel = document.getElementById('errorHandel');
+const Detailsfood = document.getElementById('Detailsfood');
+const errorpart = document.getElementById('errorpart');
 const itemList = document.querySelectorAll('.itemList');
 
 
 document.getElementById('searchFood').addEventListener('click', function(){
-    const food = document.getElementById('foodName');
-    const foodName = food.value;
-    if(foodName == ''){
+    const food = document.getElementById('namefood');
+    const namefood = food.value;
+    if(namefood == ''){
       alert('Please Enter Your Desired Food Items first letter');
     }else{
-      fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${foodName}`)
+      fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${namefood}`)
       .then(res => res.json())
       .then(data => {
           let foodMeal="";
@@ -29,8 +29,8 @@ document.getElementById('searchFood').addEventListener('click', function(){
                 </div>
                   ` ; 
               });
-              foodItem.innerHTML=foodMeal; 
-              errorHandel.style.display="none";
+              Itemfood.innerHTML=foodMeal; 
+              errorpart.style.display="none";
               parentClass.style.display="block";
               
   
@@ -38,10 +38,10 @@ document.getElementById('searchFood').addEventListener('click', function(){
             foodMeal =`
              <h3>Food item not found</h3>
             `;
-            errorHandel.innerHTML=foodMeal; 
+            errorpart.innerHTML=foodMeal; 
             parentClass.style.display="none";
-            errorHandel.style.display="block";
-            foodDetails.style.display="none";
+            errorpart.style.display="block";
+            Detailsfood.style.display="none";
   
           } 
            
@@ -50,10 +50,10 @@ document.getElementById('searchFood').addEventListener('click', function(){
           let foodMeal =`
             <h3> food item not found plz search again with first letter </h3>
           `;
-          errorHandel.innerHTML = foodMeal;
+          errorpart.innerHTML = foodMeal;
           parentClass.style.display="none";
-          errorHandel.style.display="block";
-          foodDetails.style.display="none";
+          errorpart.style.display="block";
+          Detailsfood.style.display="none";
    
   
       })
@@ -83,6 +83,6 @@ const food=(idMeal)=>{
     </div>
   </div>
     `
-    foodDetails.innerHTML = ingredient;
+    Detailsfood.innerHTML = ingredient;
   })
 }
