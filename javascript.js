@@ -23,7 +23,7 @@ document.getElementById('searchFood').addEventListener('click', function(){
                   <div class="card h-100  shadow  p-3" >
                     <img src="${meals.strMealThumb}" class="card-img-top">
                     <div class="card-body">
-                      <h5 class="card-title orangeColor fw-bold">${meals.strMeal}</h5>
+                      <h5 class="card-title text_color fw-bold">${meals.strMeal}</h5>
                     </div>
                   </div>
                 </div>
