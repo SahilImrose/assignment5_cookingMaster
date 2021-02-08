@@ -80,10 +80,10 @@ const food=(idMeal)=>{
       <li><span><i class="fas fa-check-square orange"></i> </span> ${foodObject.strIngredient4} </li>
       <li><span><i class="fas fa-check-square orange"></i> </span> ${foodObject.strIngredient5} </li>
       <li><span><i class="fas fa-check-square orange"></i> </span> ${foodObject.strIngredient6} </li>
-      <li><span><i class="fas fa-check-square orange"></i> </span> ${foodObject.strIngredient6} </li>
-      <li><span><i class="fas fa-check-square orange"></i> </span> ${foodObject.strIngredient6} </li>
-      <li><span><i class="fas fa-check-square orange"></i> </span> ${foodObject.strIngredient6} </li>
-      <li><span><i class="fas fa-check-square orange"></i> </span> ${foodObject.strIngredient6} </li>
+      <li><span><i class="fas fa-check-square orange"></i> </span> ${foodObject.strIngredient7} </li>
+      <li><span><i class="fas fa-check-square orange"></i> </span> ${foodObject.strIngredient8} </li>
+      <li><span><i class="fas fa-check-square orange"></i> </span> ${foodObject.strIngredient9} </li>
+      <li><span><i class="fas fa-check-square orange"></i> </span> ${foodObject.strIngredient10} </li>
     </div>
   </div>
     `
